@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button"
-import { Phone, ShoppingCart, Heart, Shield } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Phone, ShoppingCart, Heart, Shield } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-32 pb-16 bg-gradient-to-br from-emerald-50 via-white to-blue-50">
+    <section
+      id="home"
+      className="pt-32 pb-16 bg-gradient-to-br from-emerald-50 via-white to-blue-50"
+    >
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -11,13 +14,18 @@ export default function Hero() {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 font-serif leading-tight">
                 SIDDHU MEDICAL
-                <span className="block text-emerald-600">CHEMIST & DRUGGIST</span>
+                <span className="block text-emerald-600">
+                  CHEMIST & DRUGGIST
+                </span>
               </h1>
-              <p className="text-xl text-emerald-700 font-semibold">Your Health, Our Priority</p>
+              <p className="text-xl text-emerald-700 font-semibold">
+                Your Health, Our Priority
+              </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Your trusted neighborhood pharmacy providing quality medicines, expert health consultation, and reliable
-                healthcare services for over 15 years. We're committed to your well-being with personalized care and
-                professional service.
+                Your trusted neighborhood pharmacy providing quality medicines,
+                expert health consultation, and reliable healthcare services for
+                over 15 years. We're committed to your well-being with
+                personalized care and professional service.
               </p>
             </div>
 
@@ -39,7 +47,10 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3">
+              <Button
+                size="lg"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3"
+              >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now: +91 98765 43210
               </Button>
@@ -58,7 +69,7 @@ export default function Hero() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/hero-pharmacy.png"
                 alt="Professional pharmacist in modern SIDDHU MEDICAL pharmacy interior with organized medicine shelves, consultation counter, and clean healthcare environment"
                 className="w-full h-[500px] sm:h-[600px] object-cover"
               />
@@ -96,5 +107,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
